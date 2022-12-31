@@ -1,5 +1,5 @@
 
-const ContactAdder = ({handleSubmit, nameChanged, newName, numberChanged, newNumber}) => {
+const PersonAdder = ({handleSubmit, nameChanged, newName, numberChanged, newNumber}) => {
     return (
       <div>
 
@@ -25,4 +25,4 @@ const ContactAdder = ({handleSubmit, nameChanged, newName, numberChanged, newNum
     )
 }
 
-export default ContactAdder
+export default PersonAdder
