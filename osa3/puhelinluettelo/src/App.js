@@ -40,9 +40,7 @@ const App = () => {
       updatePerson(newName)
       return
     }
-    const id = Math.random().toString(16)
     const newPerson = {
-      id: id,
       name: newName,
       number: newNumber,
     }
@@ -51,6 +49,9 @@ const App = () => {
       setNewName('')
       setNewNumber('')
       pushNotification(`${person.name} was added to phonebook!`, 'success')
+    }).catch(error => {
+      console.log('', error.response.data)
+      pushNotification(error.response.data.error)
     })
   }
   
