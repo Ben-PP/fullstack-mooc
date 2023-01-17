@@ -1,6 +1,7 @@
 import axios from "axios"
-const baseUrl = 'https://fullstack-back.huone105.com/api/persons'
 
+const baseUrl = process.env.REACT_APP_BACKEND_URL
+console.log(baseUrl)
 const getAll = () => {
     const request = axios.get(baseUrl)
     return request.then(response => response.data)
