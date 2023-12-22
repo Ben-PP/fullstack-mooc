@@ -1,6 +1,6 @@
 # Puhlu-frontend
 
-Can be found at https://fullstack-fron.huone105.com
+Can be found at https://puhlu-front.huone105.com/
 
 ## Available Scripts
 
